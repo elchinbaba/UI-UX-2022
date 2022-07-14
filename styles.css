@@ -13,10 +13,11 @@
 .header .header__userbar {
     display: flex;
     align-items: center;
-    margin-right: 20px;
+    margin-bottom: 10px; /* add */
+    /* margin-right: 20px; */
 }
 .header .header__userbar .header__name {
-    margin-right: 10px;
+    /* margin-right: 10px; */
     font-weight: bold;
     width: 120px;
     height: 20px;
@@ -35,6 +36,7 @@
     margin-right: 5px;
 }
 .booking-page .booking-page__breadcrumbs .home {
+    margin-left: 25px; /* add */
     color: #218bc3;
     font-weight: bold;
 }
@@ -44,6 +46,7 @@
     padding: 20px 0;
 }
 .booking-page .booking-page__header .booking-page__title {
+    margin-left: 20px; /* add */
     margin-bottom: 0.5rem;
     font-family: inherit;
     font-weight: 300;
@@ -67,7 +70,8 @@
 }
 .booking-page .booking-page__header .booking-page__controls button.success {
     margin-left: 12px;
-    color: #c5c5c5;
+    /* color: #c5c5c5; */ /* remove */
+    color: white; /* add */
     background-color: #28a745;
     border-color: #28a745;
     /* cursor: pointer; */ /* remove */
@@ -86,7 +90,8 @@
     display: flex;
 }
 .booking-page .booking-page__results .booking-filters .filter-input {
-    width: 200px;
+    /* width: 200px; */ /* remove */
+    width: 50%; /* add */
     margin-right: 10px; /* change */
 }
 .booking-page .booking-page__results .booking-filters .filter-input label {
@@ -102,6 +107,7 @@
     border: 1px solid #ccc;
     border-radius: 0.25rem;
     padding: 6px 12px;
+    margin-top: 5px; /* add */
 }
 .booking-page .booking-page__results .booking-cards {
     display: flex;
@@ -109,12 +115,12 @@
     gap: 12px; /* add */
     padding: 20px;
     border-radius: 20px;
+    display: grid; /* add */
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr)); /* add */
 }
 .booking-page .booking-page__results .booking-cards .booking-card {
     background: white;
-    width: 338px;
-    height: 222px;
-    /* max-width: 350px; */
+    height: 222px; /* add */
     box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.1);
     margin: 0 4px 8px 4px;
     position: relative; /* change */
@@ -181,7 +187,7 @@
     height: 70px;
     line-height: 1;
     color: #777;
-    box-shadow: 2px 1px 1px 1px gray; /* change */
+    box-shadow: 2px 1px 1px 1px rgb(128,128,128, 0.5); /* change */
 }
 .booking-page .booking-page__results .booking-cards .booking-card .booking-card__body .booking-card__body-date .booking-card__body-date-day {
     font-size: 32px;
@@ -227,6 +233,13 @@
     margin-right: 5px;
 }
 footer {
+    margin-top: 20px; /* add */
     display: flex;
+    flex-direction: column; /* add */
     justify-content: center;
+    align-items: center; /* add */
+    gap: 5px; /* add */
+    font-size: 16px; /* add */
+    line-height: 1.2; /* add */
+    font-weight: bold; /* add */
 }
